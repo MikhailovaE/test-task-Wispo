@@ -1,0 +1,132 @@
+.banner {
+  margin-bottom: 120px;
+}
+
+.banner__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner__col {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.banner__title {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 80px;
+  margin: 120px 0 60px;
+  font-family: 'Monserat',Sans-serif, Arial;
+}
+
+.banner__subtitle {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 31px;
+  margin-bottom: 60px;
+  font-family: 'Monserat',Sans-serif, Arial;
+
+}
+
+.banner__tab {
+  display: flex;
+  padding: 24px 6px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 35px;
+  max-width: 475px;
+  max-height: 84px;
+  margin-bottom: 40px;
+
+  &:before {
+    content: "";
+    box-shadow: 0px 8px 15px rgb(0 0 0 / 10%);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 89%;
+    height: 118%;
+    top: -11px;
+    bottom: 0;
+    right: 0;
+    left: -11px;
+    border-radius: 64px 48px 35px 53px;
+    background-image: url(../images/tab.png);
+  }
+
+  .banner__tab-text {
+    margin: 0;
+    z-index: 1;
+    margin-left: -58px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    font-family: 'Monserat',Sans-serif, Arial;
+  }
+}
+
+.banner__items {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner__items-row {
+  display: flex;
+}
+
+.banner__item {
+  flex: 0 0 auto;
+  width: 50%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'Monserat',Sans-serif, Arial;
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.banner__col-with-image {
+  position: relative;
+}
+
+.banner__counter {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 10px 30px -6px rgba(35, 25, 4, 0.15);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  gap: 10px;
+  top: 80%;
+  left: 27%;
+}
+
+.counter__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: 'Monserat',Sans-serif, Arial;
+}
+
+.counter__highlight {
+  font-weight: 700;
+  font-size: 50px;
+  font-family: 'Monserat',Sans-serif, Arial;
+  line-height: 61px;
+  background: -webkit-linear-gradient(270deg, #ffcc00 0%, #ffa300 100%),
+    linear-gradient(0deg, #ffa300, #ffa300),
+    linear-gradient(0deg, #4bb1bc, #4bb1bc),
+    linear-gradient(0deg, #1767f9, #1767f9), #4633b9;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

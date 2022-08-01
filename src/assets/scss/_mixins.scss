@@ -1,0 +1,11 @@
+@mixin breakpoint($bp) {
+  @media screen and (max-width: $bp) {
+    @content;
+  }
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(/fonts/Montserrat-Black.otf); /* Для IE5-8 */
+  src: local('Montserrat'), url(/fonts/Montserrat-Black.ttf); /* Для остальных браузеров */
+}

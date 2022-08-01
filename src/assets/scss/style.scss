@@ -1,0 +1,48 @@
+@import "vars.scss";
+@import "mixins.scss";
+
+body {
+  font-family: 'Monserat',Sans-serif, Arial;
+  font-size: 14px;
+  margin: 0;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
+
+  @include breakpoint($tablet-bp) {
+    &.show-sidebar {
+      overflow: hidden;
+    }
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  visibility: visible;
+}
+
+/* Blocks */
+@import "general.scss";
+@import "components/upper-lines.scss";
+@import "components/banner.scss";
+@import "components/team.scss";
+@import "components/servises.scss";
+@import "components/additional.scss";
+// @import "components/tag.scss";
+// @import "components/accordion.scss";
+// @import "components/price.scss";
+// @import "components/checkbox.scss";
+// @import "components/card.scss";
+// @import "components/sortedby.scss";
+// @import "components/pagination.scss";
+// @import "components/shopping-modal.scss";
