@@ -1,8 +1,9 @@
 @import "vars.scss";
+@import "mixins.scss";
 
 .main {
   display: flex;
-  font-family: 'Montserrat',Sans-serif,Arial;
+  font-family: "Montserrat", Sans-serif, Arial;
 }
 
 #header {
@@ -18,13 +19,15 @@
   }
 
   .header__item {
+    display: flex;
+    justify-content: center;
     list-style: none;
     padding: 0 50px 0 70px;
     font-weight: 500;
     font-size: 16px;
     line-height: 19.5px;
     position: relative;
-    font-family: 'Monserat',Sans-serif, Arial;
+    font-family: "Monserat", Sans-serif, Arial;
 
     &::after {
       content: "";
@@ -72,19 +75,19 @@
   }
 
   a {
-    position: relative; 
+    position: relative;
     &::before {
-        content: "";
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: contain;
-        width: 10px;
-        height: 7px;
-        right: -20px;
-        top: 50%;
-        transform: translateY(-50%);
-        background-image: url(../images/svg/arrow.svg);
-      }
+      content: "";
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 10px;
+      height: 7px;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../images/svg/arrow.svg);
+    }
   }
 }
 
@@ -93,4 +96,30 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow: hidden;
+}
+
+// MOBILE VIEW
+
+@include breakpoint($laptop-bp) {
+}
+
+@include breakpoint($tablet-bp) {
+  .header__item-laptop {
+    display: none !important;
+  }
+  
+}
+
+@include breakpoint($mobile-bp) {
+  .header__item-catalog a {
+    display: none;
+    padding-left: 0;
+  }
+}
+
+@include breakpoint($xs-mobile-bp) {
+  .header {
+    display: none;
+  }
 }

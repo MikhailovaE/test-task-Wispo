@@ -13,12 +13,12 @@
 
   .servise__item {
     flex: 0 0 auto;
-    max-width: 745px;
-    height: 478px;
-  }
-  img {
-    width: 745px;
-    height: 478px;
+    width: 50%;
+
+    img {
+      width: 95%;
+      height: 95%;
+    }
   }
 }
 
@@ -27,7 +27,7 @@
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 60px;
-  font-family: 'Monserat',Sans-serif, Arial;
+  font-family: "Monserat", Sans-serif, Arial;
 }
 
 .servise__text {
@@ -35,7 +35,7 @@
   font-size: 18px;
   line-height: 25px;
   margin-bottom: 32px;
-  font-family: 'Monserat',Sans-serif, Arial;
+  font-family: "Monserat", Sans-serif, Arial;
 
   &:last-child {
     margin-bottom: 40px;
@@ -50,7 +50,7 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 18px;
-  font-family: 'Monserat',Sans-serif, Arial;
+  font-family: "Monserat", Sans-serif, Arial;
 
   &:hover {
     background: linear-gradient(270deg, #ffcc00 -20.47%, #ffa300 100%);
